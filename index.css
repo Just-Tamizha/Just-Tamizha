@@ -2,6 +2,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: 'Varela Round', sans-serif;
 }
 /* ----------------------------------------------------------------------- Main Div */
 #Head-Div{
@@ -31,7 +32,7 @@ body{
 }
 /* ----------------------------------------------------------------------- Image-Tamizha */
 #Image-Tamizha{
-    margin-top: 90px;
+    margin-top: 40px;
     margin-bottom: 20px;
     border-radius: 70%;
     width: 80px;
@@ -47,7 +48,7 @@ body{
 }
 /* ----------------------------------------------------------------------- Name Heading */
 #Name{
-    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
     margin-top: 0%;
     text-align: center;
     color:white;
@@ -64,7 +65,7 @@ div.Name{
 .Name-item {
   color:whitesmoke;
   animation-name: Name-item;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-timing-function: ease;
   animation-delay: 0s;
   animation-iteration-count: 1;
@@ -95,7 +96,7 @@ div.Name{
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  /* font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif; */
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
@@ -132,9 +133,9 @@ div.About-HTML{
   /* height: 100px; */
   /* background-color:#ffe672; */
   animation-name: About-HTML-Item;
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-timing-function: ease;
-  animation-delay: 0s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
@@ -164,9 +165,9 @@ div.About-CSS{
   /* height: 100px; */
   /* background-color:#ffe672; */
   animation-name: About-CSS-Item;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-timing-function: ease;
-  animation-delay: 0s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
@@ -196,9 +197,9 @@ div.About-JS{
   /* height: 100px; */
   /* background-color:#ffe672; */
   animation-name: About-JS-Item;
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-timing-function: ease;
-  animation-delay: 0s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
@@ -227,13 +228,13 @@ div.About-Me{
     /* background-repeat: no-repeat; */
 }
 .About-Me-Item {
-  font-family: 'Varela Round', sans-serif;
+  /* font-family: 'Varela Round', sans-serif; */
   text-align: center;
   color: black;
   animation-name: About-Me-Item;
-  animation-duration: 2.2s;
+  animation-duration: 4s;
   animation-timing-function: ease;
-  animation-delay: 0s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none; 
