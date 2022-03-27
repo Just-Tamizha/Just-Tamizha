@@ -1,8 +1,123 @@
+/* Body */
 body{
     margin: 0px;
     padding: 0px;
 }
-h1{
-    color:black;
-    background-color: aqua;
+/* ----------------------------------------------------------------------- Main Div */
+#Head-Div{
+    text-align: center;
+    background-color: blueviolet;
+    height: 400px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: Head-Div 12s ease infinite;
+}
+@keyframes Head-Div {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* ----------------------------------------------------------------------- Image-Tamizha */
+#Image-Tamizha{
+    margin-top: 90px;
+    margin-bottom: 20px;
+    border-radius: 70%;
+    width: 80px;
+    animation: Image-Tamizha 20s infinite linear;
+}
+@keyframes Image-Tamizha{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+}
+/* ----------------------------------------------------------------------- Name Heading */
+#Name{
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 0%;
+    text-align: center;
+    color:white;
+    /* background-color: aqua; */
+    -webkit-animation: Name 1s ;
+	animation: Name 1s ;
+}
+div.Name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+}
+.Name-item {
+  color:whitesmoke;
+  animation-name: Name-item;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  /* shorthand 
+  animation: Name-item 2s ease 0s 1 normal none;
+  */ 
+}
+@keyframes Name-item {
+  0%{
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100%{
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------------------------------- Button CSS */
+.Hire-Me {
+  background-color: #222;
+  border-radius: 20px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 4px 20px 4px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* width: 100%; */
+}
+.Hire-Me:hover,
+.Hire-Me:focus {
+  opacity: .75;
+}
+/* ----------------------------------------------------------------------- About Me! */
+#About-Me{
+    margin-top: 30px;
+    text-align: center;
+    /* background-color: blueviolet; */
+    height: 400px;
+    /* background-image: url(/src/Tamizha.jpeg); */
+    /* background-repeat: no-repeat; */
 }
