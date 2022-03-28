@@ -19,8 +19,8 @@
     <div id="Head-Div">
         <!-- Mail -->
         <div style="text-align: center;">
-            <a href="mailto:businessenquiry.tamizha@gmail.com" style="color: black;"><span class="material-icons" style="padding-right: 30px; font-size: 30px;padding-top: 40px;">mail</span></a>
-            <a href="https://wa.me/918838630102" style="color: black;"><span class="material-icons"style="padding-right: 30px; font-size: 30px;padding-top: 40px;">whatsapp</span></a>
+            <a href="mailto:businessenquiry.tamizha@gmail.com" style="color: black;"><span class="material-icons" style="font-size: 30px;padding-top: 40px;padding-right: 15px;">mail</span></a>
+            <a href="https://wa.me/918838630102" style="color: black;"><span class="material-icons"style=" font-size: 30px;padding-top: 40px;padding-left: 15px;">whatsapp</span></a>
         </div>
         <!-- Name Image -->
         <img src="./src/Tamizha.jpeg" alt="Tamizha Image" id="Image-Tamizha">
@@ -76,7 +76,13 @@
             <p>Hello friends! I am Tamizha from India</p>
         </div>
     </div>
-    <audio autoplay loop id="Music" src="./src/why_mona_wannabe_spice_girl.mp3"></audio>
+    <audio autoplay loop id="myAudio">
+        <source src="./src/why_mona_wannabe_spice_girl.mp3" type="audio/ogg">
+        <!-- <source src="horse.mp3" type="audio/mpeg"> -->
+    </audio>
+    <button class="Hire-Me" role="button" onclick="playSound()">
+        <i class="bi bi-arrow-up-right-square-fill"></i>Play Song !</button></div>
+
 
     
 
@@ -85,7 +91,17 @@
 
 
       <script>
-          var musicControl=document.getElementById('Music');musicControl.volume=0.3;
+        var myAudio = document.getElementById("myAudio");
+        var isPlaying = false;
+        function playSound() {
+            isPlaying ? myAudio.pause() : myAudio.play();
+        };
+        myAudio.onplaying = function() {
+            isPlaying = true;
+        };
+        myAudio.onpause = function() {
+            isPlaying = false;
+        };
       </script>
 
 
