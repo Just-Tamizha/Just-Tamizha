@@ -1,0 +1,17 @@
+on: push: branches: - main
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: ftpupload.net
+        username: epiz_33418822
+        password: ${{ secrets.FPT_PASS }}
+        protocol: ftps
+        port: 21 # todo replace with your web hosts ftps port
