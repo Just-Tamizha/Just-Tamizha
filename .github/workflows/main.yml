@@ -4,7 +4,7 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
-    server-dir: htdocs/
+    
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
@@ -12,6 +12,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
+        server-dir: htdocs/
         server: ftpupload.net
         username: epiz_33418822
         password: ${{ secrets.FPT_PASS }}
