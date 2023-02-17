@@ -1,9 +1,6 @@
-/**
-* Template Name: eNno - v4.10.0
-* Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+if(!window.location.href.indexOf("https://")==0?true:false){
+    window.location.replace("https://tamizha.epizy.com")
+}
 (function() {
   "use strict";
 
