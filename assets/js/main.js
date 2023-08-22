@@ -1,6 +1,6 @@
-if(!window.location.href.indexOf("https://")==0?true:false){
-    window.location.replace("https://tamizha.epizy.com")
-}
+// if(!window.location.href.indexOf("https://")==0?true:false){
+//     window.location.replace("https://tamizha.epizy.com")
+// }
 (function() {
   "use strict";
 
